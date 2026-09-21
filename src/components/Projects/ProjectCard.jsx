@@ -5,12 +5,14 @@ const ProjectCard = ({
   project: { title, imageSrc, description, skills, demo, status },
 }) => {
   return (
-    <div className={styles.container}>
-      <img
-        className={styles.image}
-        src={getImageUrl(imageSrc)}
-        alt={`image of ${title}`}
-      />
+    <article className={styles.container}>
+      <div className={styles.imageFrame}>
+        <img
+          className={styles.image}
+          src={getImageUrl(imageSrc)}
+          alt={`Preview of ${title}`}
+        />
+      </div>
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
       <ul className={styles.skills}>
@@ -34,10 +36,10 @@ const ProjectCard = ({
           rel="noopener noreferrer"
           className={styles.link}
         >
-          Demo
+          View live demo <span aria-hidden="true">-&gt;</span>
         </a>
       </div>
-    </div>
+    </article>
   );
 };
 

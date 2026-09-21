@@ -3,25 +3,41 @@
 .container {
   color: var(--color-text);
   margin-top: 120px;
-  background: var(--color-secondary);
+  background: linear-gradient(110deg, var(--color-secondary), #0b2447);
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-between;
   width: 100vw;
-  padding: 58px 10%;
-  gap: 10px;
+  padding: 64px 10%;
+  gap: 60px;
+}
+
+.text {
+  max-width: 520px;
+}
+
+.eyebrow {
+  margin-bottom: 14px;
+  color: #a5d7e8;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
 }
 
 .text h2 {
-  font-size: 80px;
+  font-size: clamp(38px, 5vw, 62px);
+  line-height: 1.05;
   font-weight: 700;
-  letter-spacing: 4px;
 }
 
-.text p {
-  font-size: 40px;
+.description {
+  max-width: 430px;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 19px;
+  line-height: 1.55;
   font-weight: 400;
-  letter-spacing: 2px;
 }
 
 .links {
@@ -35,31 +51,70 @@
 .link {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 15px;
+}
+
+.link img {
+  width: 30px;
+  height: 30px;
 }
 
 .link a {
   color: var(--color-text);
   text-decoration: none;
-  font-size: 30px;
+  font-size: 17px;
   font-weight: 400;
-  letter-spacing: 1.5px;
+  transition: color 180ms ease;
+}
+
+.link a:hover,
+.link a:focus-visible {
+  color: #a5d7e8;
+}
+
+.contactCta {
+  align-self: center;
+  color: #071a36;
+  background: #a5d7e8;
+  border-radius: 999px;
+  padding: 13px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    background-color 180ms ease,
+    transform 180ms ease;
+}
+
+.contactCta:hover,
+.contactCta:focus-visible {
+  background: var(--color-text);
+  transform: translateY(-3px);
 }
 
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column;
     gap: 23px;
-
   }
 
   .text {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   .links {
     align-items: center;
+  }
+
+  .contactCta {
+    align-self: center;
+  }
+
+  .description {
+    font-size: 17px;
   }
 }

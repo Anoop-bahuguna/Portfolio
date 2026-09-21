@@ -8,22 +8,30 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <a className={styles.title} href="/">
-        Portflio
+        Anoop <span className={styles.brandRole}>/ software developer</span>
       </a>
       <div className={styles.menu}>
-        <img
+        <button
           className={styles.menuBtn}
-          src={
-            menuOpen
-              ? getImageUrl("nav/closeIcon.png")
-              : getImageUrl("nav/menuIcon.png")
-          }
-          alt="menu-button"
+          type="button"
+          aria-label={menuOpen ? "Close navigation" : "Open navigation"}
+          aria-expanded={menuOpen}
+          aria-controls="primary-navigation"
           onClick={() => {
             setMenuOpen(!menuOpen);
           }}
-        />
+        >
+          <img
+            src={
+              menuOpen
+                ? getImageUrl("nav/closeIcon.png")
+                : getImageUrl("nav/menuIcon.png")
+            }
+            alt=""
+          />
+        </button>
         <ul
+          id="primary-navigation"
           className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
           onClick={() => {
             setMenuOpen(false);
@@ -33,7 +41,7 @@ const Navbar = () => {
             <a href="#about">About</a>
           </li>
           <li>
-            <a href="#experience ">Experience</a>
+            <a href="#experience">Experience</a>
           </li>
           <li>
             <a href="#projects">Projects</a>

@@ -3,17 +3,33 @@
 .navbar {
   position: relative;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding-top: 61px;
+  padding-top: 38px;
   z-index: 2;
   margin: 0 10%;
 }
 
 .title {
   text-decoration: none;
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
   color: var(--color-text);
+  transition: color 180ms ease;
+}
+
+.brandRole {
+  color: #a5d7e8;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.title:hover,
+.title:focus-visible {
+  color: #a5d7e8;
 }
 
 .menu {
@@ -21,20 +37,48 @@
 }
 .menuBtn {
   display: none;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
 }
 .menuItems {
   display: flex;
-  gap: 47px;
+  align-items: center;
+  gap: 34px;
   list-style: none;
 }
 
 .menuItems a {
-  font-size: 25px;
+  position: relative;
+  font-size: 19px;
   color: var(--color-text);
   text-decoration: none;
+  transition: color 180ms ease;
 }
-.menuItems a:hover {
-  border-bottom: 3px solid yellow;
+
+.menuItems a::after {
+  position: absolute;
+  right: 0;
+  bottom: -7px;
+  left: 0;
+  height: 2px;
+  content: "";
+  background: #a5d7e8;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 180ms ease;
+}
+
+.menuItems a:hover,
+.menuItems a:focus-visible {
+  color: #a5d7e8;
+}
+
+.menuItems a:hover::after,
+.menuItems a:focus-visible::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 @media screen and (max-width: 830px) {
@@ -53,21 +97,25 @@
   }
   .menuBtn {
     display: block;
-    cursor: pointer;
+  }
+
+  .menuBtn img {
+    display: block;
+    width: 28px;
   }
   .menuItems {
     display: none;
     flex-direction: column;
     align-items: start;
-    gap: 13px;
+    gap: 16px;
     border-radius: 10px;
     background: linear-gradient(
       0deg,
       rgba(25, 55, 109, 0.95) 0%,
       rgba(25, 55, 109, 1) 100%
     );
-    padding: 24px 33px;
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25);
+    padding: 22px 28px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
   }
 
   .menuOpen {
