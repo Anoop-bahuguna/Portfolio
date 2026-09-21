@@ -2,7 +2,7 @@
 
 .container {
   color: var(--color-text);
-  margin-inline: 10%;
+  margin-inline: clamp(20px, 10%, 120px);
   margin-top: 79px;
 }
 
@@ -34,6 +34,7 @@
 .skillsSection,
 .history {
   width: 50%;
+  min-width: 0;
 }
 
 .sectionLabel {
@@ -201,6 +202,7 @@
     flex-direction: column;
     align-items: center;
     gap: 34px;
+    margin-top: 30px;
   }
 
   .skills {
@@ -213,5 +215,45 @@
   .history {
     width: 100%;
     gap: 9px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    margin-inline: 20px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .intro {
+    font-size: 17px;
+  }
+
+  .skills {
+    gap: 12px 8px;
+  }
+
+  .skill {
+    width: 112px;
+    min-height: 136px;
+  }
+
+  .skillImgContainer {
+    width: 100px;
+    height: 100px;
+  }
+
+  .skillImgContainer img {
+    width: 62px;
+  }
+
+  .historyItem {
+    padding: 18px 16px;
+  }
+
+  .historyItemDetails h3 {
+    font-size: 18px;
   }
 }

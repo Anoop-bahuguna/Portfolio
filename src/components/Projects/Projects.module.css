@@ -3,8 +3,7 @@
 .container {
   margin-top: 76px;
   color: var(--color-text);
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-inline: clamp(20px, 10%, 120px);
 }
 
 .title {
@@ -17,7 +16,7 @@
 .projects {
   margin-top: 37px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 345px));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
   justify-content: center;
   gap: 15px;
   width: 100%;
