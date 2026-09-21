@@ -8,7 +8,7 @@
   },
   {
     "title": "Daymark – Personal Task Planner",
-    "imageSrc": "project/daymark.png",
+    "imageSrc": "project/project.png",
     "description": "A clean and calming task planner for adding, organizing, filtering, completing, and removing daily tasks, with tasks stored locally in the browser for seamless continuity.",
     "skills": ["HTML", "CSS", "JavaScript"],
     "demo": "https://to-do-list-alpha-blush-24.vercel.app/"
