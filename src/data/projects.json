@@ -7,6 +7,13 @@
     "demo": "https://xpplayer.vercel.app/home"
   },
   {
+    "title": "Daymark – Personal Task Planner",
+    "imageSrc": "project/daymark.png",
+    "description": "A clean and calming task planner for adding, organizing, filtering, completing, and removing daily tasks, with tasks stored locally in the browser for seamless continuity.",
+    "skills": ["HTML", "CSS", "JavaScript"],
+    "demo": "https://to-do-list-alpha-blush-24.vercel.app/"
+  },
+  {
     "title": "IPTV Subscription",
     "imageSrc": "project/project.png",
     "description": "An IPTV subscription web app designed to showcase IPTV plans and provide users with an easy way to explore available streaming services.",
@@ -19,6 +26,13 @@
     "description": "A web app that helps businesses create professional landing pages and web experiences tailored to their brand, making it easy to build and showcase their online presence.",
     "skills": ["React", "JavaScript", "HTML", "CSS"],
     "demo": "https://build-static-jade.vercel.app/"
+  },
+  {
+    "title": "Orion Voice Assistant",
+    "imageSrc": "project/orion.png",
+    "description": "A hands-free web assistant that listens to voice commands, opens websites, and displays recent activity in real time through a sleek, interactive dashboard.",
+    "skills": ["HTML", "CSS", "JavaScript"],
+    "demo": "https://voice-assistant-tau-drab.vercel.app/"
   },
   {
     "title": "XP IPTV",
