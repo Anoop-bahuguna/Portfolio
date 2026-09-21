@@ -1,0 +1,31 @@
+[
+  {
+    "title": "XP Player",
+    "imageSrc": "project/project.png",
+    "description": "A marketing web-app for XP Player, designed to promote its streaming service and features.",
+    "skills": ["Angular", "Express.js", "Node.js", "MongoDB"],
+    "demo": "https://xpplayer.vercel.app/home"
+  },
+  {
+    "title": "IPTV Subscription",
+    "imageSrc": "project/project.png",
+    "description": "An IPTV subscription web app designed to showcase IPTV plans and provide users with an easy way to explore available streaming services.",
+    "skills": ["Angular", "TypeScript", "HTML", "CSS"],
+    "demo": "https://iptv-eight-dun.vercel.app/"
+  },
+  {
+    "title": "Builstatic",
+    "imageSrc": "project/project.png",
+    "description": "A web app that helps businesses create professional landing pages and web experiences tailored to their brand, making it easy to build and showcase their online presence.",
+    "skills": ["React", "JavaScript", "HTML", "CSS"],
+    "demo": "https://build-static-jade.vercel.app/"
+  },
+  {
+    "title": "XP IPTV",
+    "imageSrc": "project/project.png",
+    "description": "A web-based IPTV player that lets users stream and watch IPTV content through a clean and responsive video player interface.",
+    "skills": ["Angular", "TypeScript", "HTML", "CSS"],
+    "demo": "https://9xwebplayer.vercel.app/",
+    "status": "In progress"
+  }
+]
