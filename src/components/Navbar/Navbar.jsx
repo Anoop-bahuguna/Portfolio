@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <a className={styles.title} href="/">
-        Anoop <span className={styles.brandRole}>/ software developer</span>
+        Anoop
       </a>
       <div className={styles.menu}>
         <button
