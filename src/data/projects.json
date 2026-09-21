@@ -29,7 +29,7 @@
   },
   {
     "title": "Orion Voice Assistant",
-    "imageSrc": "project/orion.png",
+    "imageSrc": "project/project.png",
     "description": "A hands-free web assistant that listens to voice commands, opens websites, and displays recent activity in real time through a sleek, interactive dashboard.",
     "skills": ["HTML", "CSS", "JavaScript"],
     "demo": "https://voice-assistant-tau-drab.vercel.app/"
