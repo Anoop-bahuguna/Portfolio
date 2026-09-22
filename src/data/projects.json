@@ -21,7 +21,7 @@
     "demo": "https://iptv-eight-dun.vercel.app/"
   },
   {
-    "title": "Builstatic",
+    "title": "Buildstatic",
     "imageSrc": "project/project.png",
     "description": "A web app that helps businesses create professional landing pages and web experiences tailored to their brand, making it easy to build and showcase their online presence.",
     "skills": ["React", "JavaScript", "HTML", "CSS"],
